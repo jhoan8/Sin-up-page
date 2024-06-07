@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "OdinProject";
+  src: url("../asset/fonts/Norse-Bold.otf");
+}
+:root {
+  --main-font: "OdinProject";
+  --degradade-background-color: #000000bd;
+  --background-color-form: #fff;
+  --background-color-input: #e5e7eb;
+  --background-color-input-invalid: #f00;
+  --background-crear-cuenta-button: #596d48;
+  --background-facebook-button: #3b5998;
+  --background-google-button: #fff;
+  --background-gitHub-button: #171515;
+  --font-color-primary: #fff;
+}
+body {
+  background: linear-gradient(
+      var(--degradade-background-color),
+      var(--degradade-background-color)
+    ),
+    url("../asset/img/nikolay-werner-V59aWY2-xGo-unsplash.jpg");
+  background-size: cover;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+nav img {
+  width: 30px;
+}
+main .form-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+main .form-container form {
+  width: 30%;
+  background: var(--background-color-form);
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  align-items: center;
+  gap: 30px;
+  font-family: var(--main-font);
+}
+main .form-container form input {
+  padding: 20px;
+  width: 400px;
+  background: var(--background-color-input);
+  border: none;
+  border-bottom: 2px solid var(--background-gitHub-button);
+  outline: none;
+}
+main .form-container form input:focus {
+  border: 2px solid #00f;
+}
+.inputContainer {
+  position: relative;
+  width: auto;
+  height: auto;
+}
+.inputContainer label {
+  position: absolute;
+  font-size: 1rem;
+  padding: 0.875rem;
+  top: 0.25rem;
+  left: 0;
+  transition: 0.3s ease all;
+}
+.inputContainer input:focus + label {
+  font-size: 0.75rem;
+  color: var(--font-color);
+  top: 0.313rem;
+  left: 1.063rem;
+  padding: 0 0.313rem 0 0.313rem;
+}
+.form-container button {
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--background-crear-cuenta-button);
+}
+.form-container .facebook {
+  background-color: var(--background-facebook-button);
+  color: var(--font-color-primary);
+}
+.form-container .Google {
+  background-color: var(--background-google-button);
+}
+.form-container .gitHub {
+  background-color: var(--background-gitHub-button);
+  color: var(--font-color-primary);
+}
+.form-container input:invalid {
+  border: 2px solid var(--background-color-input-invalid);
+}
+@media (max-width: 1350px) {
+  main .form-container form input {
+    width: 250px;
+  }
+  .autoSinUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    gap: 10px;
+  }
+}
+@media (max-width: 850px) {
+  main .form-container form input {
+    width: 125px;
+  }
+}

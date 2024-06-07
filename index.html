@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin project</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/normalize.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav>
+          <img src="asset/img/odin-lined.png" alt="" />
+          <div></div>
+        </nav>
+      </header>
+      <div class="form-container">
+        <form id="form" action="" method="post">
+          <div class="inputContainer">
+            <input type="text" id="name" />
+            <label for="name">Nombre</label>
+          </div>
+          <div class="inputContainer">
+            <input type="text" id="mail" />
+            <label for="mail">Email</label>
+          </div>
+          <div class="inputContainer">
+            <input type="password" id="password" />
+            <label for="password">Contrasena</label>
+          </div>
+          <button type="submit">Confirmar</button>
+          <span class="error"></span>
+          <div class="autoSinUp">
+            <button class="facebook">
+              <img src="asset/img/facebook.svg" alt="facebook" />
+              <span>Facebook</span>
+            </button>
+            <button class="gitHub">
+              <img src="asset/img/github.svg" alt="gitHub" />
+              <span>GitHub</span>
+            </button>
+            <button class="Google">
+              <img src="asset/img/google.svg" alt="google" />
+              <span>Google</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="JS/app.js"></script>
+  </body>
+</html>
